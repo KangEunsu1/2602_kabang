@@ -23,12 +23,20 @@
 
             <div class="flex-grow-1"></div>
 
-            <nav class="flex menu_box">
+            <nav class="flex height-100p menu_box">
                 <ul class="flex height-100p">
-                    <li><a href="#">은행소개</a></li>
-                    <li><a href="#">IR투자정보</a></li>
-                    <li><a href="#">상품안내</a></li>
-                    <li><a href="#">고객센터</a></li>
+                    <li class="height-100p"><a href="#">은행소개</a>
+                        <ul></ul>
+                    </li>
+                    <li><a href="#">IR투자정보</a>
+                        <ul></ul>
+                    </li>
+                    <li><a href="#">상품안내</a>
+                        <ul></ul>
+                    </li>
+                    <li><a href="#">고객센터</a>
+                        <ul></ul>
+                    </li>
                 </ul>
             </nav>
 
@@ -162,8 +170,13 @@
             height: 100%;
         }
 
+        /* ---------1차 메뉴 박스 */
         .menu_box {
             height: 100%;
+        }
+
+        .menu_box > ul > li {
+            
         }
 
         header .menu_box > ul > li > a {
@@ -184,6 +197,21 @@
         }
 
         header .menu_box > ul > li:hover > a::after {
+            display: block;
+        }
+
+        /* ---------2차 메뉴 박스 */
+        header .menu_box > ul > li > ul {
+            width: 100%;
+            height: 200px;
+            background-color: burlywood;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+        }
+
+        header .menu_box > ul > li:hover > ul {
             display: block;
         }
     </style>
