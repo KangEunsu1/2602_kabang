@@ -20,6 +20,32 @@
 	</section>
 
 	<div class="md_divider"></div>
+	
+	<section class="md_sec md_sec_2 con">
+		<div></div>
+		<div></div>
+	</section>
+
+	<div class="md_divider"></div>
+	
+	<section class="md_sec md_sec_3 con">
+		<div></div>
+		<div></div>
+	</section>
+
+	<div class="md_divider"></div>
+
+	<section class="md_sec md_sec_4 con">
+		<div></div>
+		<div></div>
+	</section>
+
+	<div class="md_divider"></div>
+
+	<section class="md_sec md_sec_5 con">
+		<div></div>
+		<div></div>
+	</section>
 
 	<style>
 		/* 노말라이즈 */
@@ -129,7 +155,26 @@
 		}
 
 		/* --------------중간 섹션 시작 ------------*/
-        
+        .md_sec {
+			min-height: 500px;
+			border: 10px solid black;
+			display: flex;
+		}
+
+		.md_sec > div:first-child {
+			background-color: pink;
+			width: 50%;
+		}
+
+		.md_sec > div:last-child {
+			background-color: rgb(109, 37, 49);
+			flex-grow: 1;
+		}
+
+		.md_divider {
+			height: 32px;
+			background-color: #818181;
+		}
         /* --------------중간 섹션 끝 ------------*/
 	</style>
 	
